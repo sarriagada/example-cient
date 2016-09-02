@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby on Rails</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style type="text/css" media="screen" charset="utf-8">
+    body {
+      font-family: Georgia, sans-serif;
+      line-height: 2rem;
+      font-size: 1.3rem;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    h1 {
+      font-weight: normal;
+      line-height: 2.8rem;
+      font-size: 2.5rem;
+      letter-spacing: -1px;
+      color: #f85d5d;
+      text-shadow: 1px 1px 5px #eee;
+    }
+
+    p { font-family: monospace; }
+
+    .container {
+      width: 960px;
+      margin: 0 auto 40px;
+      overflow: hidden;
+    }
+
+
+    section {
+      margin: 0 auto 2rem;
+      padding: 1rem 0 0;
+      width: 700px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <p>
+        <a href="http://hashdog.com">
+          <%= image_tag 'logo.svg', alt: "HashDog" %>
+        </a>
+      </p>
+
+      <h1>Wellcome [client name]! We're ready!</h1>
+
+      <%= image_tag 'team.png', alt: "HashDog Team" %>
+
+      <p class="version">
+        <strong>Rails version:</strong> <%= Rails.version %><br />
+        <strong>Ruby version:</strong> <%= RUBY_VERSION %> (<%= RUBY_PLATFORM %>)
+      </p>
+    </section>
+  </div>
+</body>
+</html>
